@@ -7,6 +7,7 @@ import JobListingsPage from './pages/JobListingsPage';
 import JobDetailPage from './pages/JobDetailPage';
 import EmployerDashboardPage from './pages/EmployerDashboardPage';
 import CandidateDashboardPage from './pages/CandidateDashboardPage';
+import ContactPage from './pages/ContactPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/jobs/:id" element={<JobDetailPage />} />
         <Route path="/employer/dashboard" element={<EmployerDashboardPage />} />
         <Route path="/candidate/dashboard" element={<CandidateDashboardPage />} />
+        <Route path="/contact" element={<ContactPage />}/>
       </Routes>
     </Router>
   );
